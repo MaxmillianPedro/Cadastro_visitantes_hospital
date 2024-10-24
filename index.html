@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de visitantes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        
+    </header>
+    <div>
+        <h1>Cadastro de visitantes</h1>
+        <p>Complete as informações abaixo:</p>
+    </div>
+    <form>
+        <fieldset>
+            <div>
+                <label>Nome completo:</label>
+                <input type="text" name="" id="nome">
+            </div>
+            <div>
+                <label>CPF:</label>
+                <input type="text" name="cpf" id="cpf">
+            </div>
+            <div>
+                <label>Telefone:</label> 
+                <input type="text" name="telefone" id="telefone">  
+            </div>
+        </fieldset>    
+        <fieldset>
+            <div>
+                <label>Nome do paciente:</label>
+                <input type="text" name="paciente" id="paciente"><br>   
+                <label>Data da visita:</label>
+                <input type="date" name="data" id="data"><br>
+                <label>Horário da visita:</label>
+                <input type="radio" value="Manhã" id="manhã" name="horario">
+                <label for="manhã">Manhã</label>
+                <input type="radio" value="Tarde" id="tarde" name="horario">
+                <label for="tarde">Tarde</label>
+                <input type="radio" value="Noite" id="noite" name="horario">
+                <label for="noite">Noite</label>
+            </div>
+        </fieldset>            
+    </form>
+</body>
+</html>
