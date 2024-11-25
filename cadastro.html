@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de visitantes</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function exibeAlert() {
+            alert('Cadastro concluído com sucesso!')
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Hospital</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="campo">
+        <h1 id="titulo">Cadastro de visitantes</h1>
+    </div>
+    <div class="campo">
+        <p id="subtitulo">Complete as informações abaixo:</p>
+    </div>
+    <div>
+        <form>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label>Nome completo:</label>
+                    <input type="text" name="" id="nome">
+                </div>
+                <div class="campo">
+                    <label>CPF:</label>
+                    <input type="text" name="cpf" id="cpf">
+                </div>
+                <div class="campo">
+                    <label>Telefone:</label> 
+                    <input type="text" name="telefone" id="telefone">  
+                </div>
+                <div class="campo">
+                    <label>Nome do paciente:</label>
+                    <input type="text" name="paciente" id="paciente"><br> 
+                </div> 
+                <div class="campo">    
+                    <label>Data da visita:</label>
+                    <input type="date" name="data" id="data"><br>
+                </div>
+                <div class="campo" class="radio"> 
+                    <label>Horário da visita:</label>
+                    <input type="radio" value="Manhã" id="manhã" name="horario">
+                    <label for="manhã">Manhã</label>
+                    <input type="radio" value="Tarde" id="tarde" name="horario">
+                    <label for="tarde">Tarde</label>
+                    <input type="radio" value="Noite" id="noite" name="horario">
+                    <label for="noite">Noite</label>
+                </div>
+                <div>
+                    <button class="botao" type="submit" onclick="exibeAlert()">Salvar</button> 
+                </div>
+            </fieldset>           
+        </form>
+    </div>    
+</body>
+</html>
